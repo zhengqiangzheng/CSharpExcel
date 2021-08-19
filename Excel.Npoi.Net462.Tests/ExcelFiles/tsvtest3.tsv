@@ -1,0 +1,7 @@
+SkuID	Name	StockOnHand	ItemIds	H1Category
+D001	Milk, 1L	8	3596710216069	Dairy
+D002	Milk, 0.5L	8	3596710216070	Dairy
+D003	Skimmed Milk, 1L	7	3596710216071,3596710216072	Dairy
+M001	Burger Patties	5	3596710216073	Meat
+M002	Hot Dog Sausage Pack	3	3596710216074	Meat
+

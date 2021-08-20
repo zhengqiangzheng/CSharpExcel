@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Excel.Npoi</id>
+    <version>1.0.1</version>
+    <title>Excel.Npoi</title>
+    <authors>QiangZheng</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/zhengqiangzheng/CSharpExcel</projectUrl>
+    <description>Excel.Npoi</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>2021</copyright>
+  </metadata>
+</package>

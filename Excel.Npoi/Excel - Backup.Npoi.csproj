@@ -8,9 +8,9 @@
     <Authors>QiangZheng</Authors>
     <license>MIT</license>
     <description>csharp 操作excel库</description>
-    <Company />
+ 	<Company />
     <RepositoryUrl>https://github.com/zhengqiangzheng/CSharpExcel</RepositoryUrl>
-    <NeutralLanguage></NeutralLanguage>
+    <NeutralLanguage>none</NeutralLanguage>
 
   </PropertyGroup>
 

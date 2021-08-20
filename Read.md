@@ -1,14 +1,12 @@
-## cExcel操作类库
+## Excel操作类库
 
-### Nuget 搜索 `eHi.ToolKit.BarCode` 并选择安装.
-
-目前在crmcore api中使用
+### Nuget 搜索 `Excel.Npoi` 并选择安装.
 
 引入命名空间 `using Excel.Npoi`
 
 #### 方法1：ExcelHelper.ConvertToDataTable
 
-将excel转成DataTable,支持xls,xlsx ,csv,tsv
+将Excel 转成DataTable,支持xls,xlsx ,csv,tsv
 
 参数信息：`Stream stream(文件流), bool firstRowIsTitle = true(第一行是否标题), int sheetIndex (xls或xlsx格式第几个sheet)= 0`
 
@@ -38,7 +36,7 @@
 
 #### 方法2:ExcelHelper.ConvertToList<T>
 
-将Excel转换成List<T> ,如需Excel列表题与实体对应 需在实体上加上 特性 Description,支持Excel格式 xls xlsx
+将Excel转换成List<T> ,**如需Excel列表题与实体对应** 需在property上加上 **特性** **Description**    支持Excel格式 xls xlsx
 
 参数信息: `Stream stream(文件流), int sheetIndex() = 0`
 

@@ -20,6 +20,41 @@ namespace Excel.Npoi
         /// <summary>
         /// excel 转换成 dataTable
         /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="firstRowIsTitle"></param>
+        /// <param name="sheetIndex"></param>
+        /// <returns></returns>
+        public static DataTable ConvertToDataTable(string filePath, bool firstRowIsTitle = true, int sheetIndex = 0)
+        {
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException($"文件不存在");
+            }
+
+            using var fs = File.OpenRead(filePath);
+            return ConvertToDataTable(fs, firstRowIsTitle, sheetIndex);
+        }
+
+        /// <summary>
+        /// 将excel转换为List
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="filePath"></param>
+        /// <param name="sheetIndex"></param>
+        /// <returns></returns>
+        public static List<T> ConvertToList<T>(string filePath, int sheetIndex = 0) where T : new()
+        {
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException($"文件不存在");
+            }
+            using var fs = File.OpenRead(filePath);
+            return ConvertToList<T>(fs, sheetIndex);
+
+        }
+        /// <summary>
+        /// excel 转换成 dataTable
+        /// </summary>
         /// <param name="stream">excel流 </param>
         /// <param name="firstRowIsTitle"></param>
         /// <param name="sheetIndex">需要解析的sheet,默认不传是0</param>
